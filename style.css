@@ -1,4 +1,71 @@
-input:focus {
-    background-color: red;
-    color: white;
+/* body의 height 값은 기본적으로 100% 가 아님. */
+* {
+  margin: 0;
+  padding: 0;
 }
+
+html,
+body {
+  height: 100%;
+
+}
+
+.container {
+
+  border: solid 1px;
+  width: 700px;
+  height: 95vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+
+}
+
+.par {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+header>ul {
+  display: flex;
+}
+
+header>ul>li {
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+header>ul>li>a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+}
+
+header>ul>li:first-child>a {
+  border-bottom: 5px solid black;
+}
+
+section {
+
+  padding: 0.3rem;
+  text-align: center;
+}
+
+section>p:first-child {
+  font-size: 2rem;
+}
+
+section>p:first-child(2) {}
