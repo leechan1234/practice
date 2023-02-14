@@ -7,12 +7,12 @@
 html,
 body {
   height: 100%;
-
+background-color: #333333;
 }
 
 .container {
 
-  border: solid 1px;
+ 
   width: 700px;
   height: 95vh;
   margin: 0 auto;
@@ -36,26 +36,30 @@ header {
 .par {
   font-size: 22px;
   font-weight: bold;
+  color: white;
 }
 
 header>ul {
   display: flex;
+ 
 }
 
 header>ul>li {
   list-style-type: none;
   margin-right: 10px;
+
 }
 
 header>ul>li>a {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.2rem;
-  padding-bottom: 5px;
+  padding-bottom: 5px ;
+  color: white;
 }
 
 header>ul>li:first-child>a {
-  border-bottom: 5px solid black;
+  border-bottom: 3px solid white;
 }
 
 section {
@@ -63,9 +67,35 @@ section {
   padding: 0.3rem;
   text-align: center;
 }
+section>p{
+  margin: 10px;
+  line-height: 30px;
+  color: white;
+}
 
 section>p:first-child {
   font-size: 2rem;
+  font-weight: bold;
+}
+section>p:last-of-type{
+ font-size: 1.3rem;
+ font-weight: 600;
+}
+button{
+  width: 135px;
+  height: 35px;
+  background-color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+footer>p{
+  color: #434343;
+}
+footer>p>a{
+  color: white;
 }
 
-section>p:first-child(2) {}
+header>ul>li>a:hover{
+  border-bottom: 5px gray;
+}
